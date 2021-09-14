@@ -5,11 +5,12 @@
 
 import React from "react" // agregar la libreria 
 import ReactDOM from 'react-dom' //react dom
-import Exercise from "./components/pages/Exercise"
+// import Exercise from "./components/pages/Exercise"
 import Nav from "./components/Nav"
 import 'bootstrap/dist/css/bootstrap.css'
 
+import App from './components/App'
 const container = document.getElementById("root");
 
 
-ReactDOM.render(<Exercise/>,container)
+ReactDOM.render(<App/>,container)

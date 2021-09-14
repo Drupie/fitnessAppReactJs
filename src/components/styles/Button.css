@@ -1,0 +1,10 @@
+.container img{
+    width: 80px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.launcher{
+    margin-top: 50px;
+}
