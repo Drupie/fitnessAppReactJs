@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// const element = document.createElement('h1');
+// element.innerText ="Hello React..";
+// const container = document.getElementById("root");
+// container.appendChild(element);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from "react" // agregar la libreria 
+import ReactDOM from 'react-dom' //react dom
+import Exercise from "./components/pages/Exercise"
+import Nav from "./components/Nav"
+import 'bootstrap/dist/css/bootstrap.css'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById("root");
+
+
+ReactDOM.render(<Exercise/>,container)
