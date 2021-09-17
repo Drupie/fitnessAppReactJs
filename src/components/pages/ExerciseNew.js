@@ -19,6 +19,25 @@ class ExerciseNew extends React.Component{
            }
        })
    }
+   handleSubmit = e => {
+    e.preventDefault()
+    try {
+     let config = {
+         method: 'POST',
+         headers:{
+             'Accept': 'application/json',
+             'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(this.state.form)
+         
+     }
+     let res =  fetch('http://localhost:8888/api/exercises',config)
+     let json = res.json()
+    } catch (error) {
+        
+    }
+    console.log(this.state)
+}
     
     render(){
         return (
@@ -32,6 +51,7 @@ class ExerciseNew extends React.Component{
                <ExerciseForm
             onChange={this.handleChange}
             form={this.state.form}
+            onSubmit={ this.handleSubmit}
             />
                </div>
             </div>
